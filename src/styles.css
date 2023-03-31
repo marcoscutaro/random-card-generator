@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap");
+body {
+  background-color: rgb(33, 33, 33);
+
+  font-family: "baskerville";
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  width: 250px;
+}
+
+.btn_generate {
+  background-color: rgb(15, 15, 15);
+  color: aliceblue;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn_generate:hover {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  transition: 0.3s;
+}
+.card_size_text {
+  font-family: "Roboto";
+  color: aliceblue;
+  font-size: 26px;
+  margin: 20px 0 40px 0;
+}
+
+input {
+  background: #373737;
+  color: aliceblue;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.white_text_color {
+  font-family: "Roboto";
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40%;
+  font-size: 80px;
+}
+
+.card {
+  display: inline-block;
+  background: #373737;
+  margin: auto;
+  height: 300px;
+  font-size: 80px;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  color: aliceblue;
+}
+
+.card:before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 60px;
+}
+.card:after {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 60px;
+}
+.card.spade:before,
+.card.spade:after {
+  content: "♠";
+  background-image: linear-gradient(45deg, #9c9c9c, #8383837a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.card.club:before,
+.card.club:after {
+  content: "♣";
+  background-image: linear-gradient(45deg, #9c9c9c, #8383837a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.card.heart:before,
+.card.heart:after {
+  content: "♥";
+  background-image: linear-gradient(45deg, #fbcc22, #fbcc227a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.card.diam:before,
+.card.diam:after {
+  content: "♦";
+  background-image: linear-gradient(45deg, #fbcc22, #fbcc227a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
