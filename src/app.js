@@ -30,7 +30,7 @@ const generateRandomNumber = () => {
     "10",
     "J",
     "Q",
-    "K",
+    "K"
   ];
   const index = Math.floor(Math.random() * numbers.length);
   return numbers[index];
