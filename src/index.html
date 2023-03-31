@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Hidden Search</title>
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+      <div class="card diam">
+        <span class="top-suit"></span>
+        <span class="number"></span>
+        <span class="bot-suit"></span>
+      </div>
+      <div>
+        <button id="btnId" class="btn_generate">
+          <p id="button_margin">Generate Random Card</p>
+        </button>
+      </div>
+      <div>
+        <p class="card_size_text">Change the card size!</p>
+        <p class="white_text_color">Width</p>
+        <input type="text" id="widthInput" placeholder="size in px" />
+        <p class="white_text_color">Height</p>
+        <input type="text" id="heightInput" placeholder="size in px" />
       </div>
     </div>
+
+    <script
+      src="https://kit.fontawesome.com/289b61be0c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
   </body>
 </html>
